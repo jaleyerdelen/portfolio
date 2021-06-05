@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- jquery -->
+    <script src="jquery-3.6.0.min.js"></script>
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header id="home">
+      <!-- navbar -->
+      <nav id="nav">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img src="./logo.svg" class="logo" alt="logo" />
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- links -->
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="#home" class="scroll-link">home</a>
+              </li>
+              <li>
+                <a href="#about" class="scroll-link">about</a>
+              </li>
+              <li>
+                <a href="#projects" class="scroll-link">projects</a>
+              </li>
+              <li>
+                <a href="#comment" class="scroll-link">comment</a>
+              </li>
+              <li>
+                <a href="#contact" class="scroll-link">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- banner -->
+      <div class="banner">
+        <div class="container">
+          <h1>scroll project</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eos
+            neque sunt in? Id, necessitatibus quos quisquam distinctio
+            laudantium fugiat?
+          </p>
+          <a href="#contact" class="scroll-link btn btn-white"
+            >explore contact</a
+          >
+        </div>
+      </div>
+    </header>
+    <!-- about -->
+    <section id="about" class="section">
+      <div class="title">
+        <h2>about <span>me</span></h2>
+      </div>
+    </section>
+    <!-- projects -->
+    <section id="projects" class="section">
+      <div class="title">
+        <h2>my <span>projects</span></h2>
+      </div>
+    </section>
+
+    <h1 id="title">??</h1>
+    <div id="comments"></div>
+    <a id="click-me">click</a>
+   
+    <!-- comments -->
+    <section id="comment" class="section">
+      <div class="title">
+        <h2>Comment <span>me</span></h2>
+
+  
+<form action="" id="my-form">
+    First name: <input type="text" name="FirstName" id="my-input"><br>
+    Last name: <input type="text" name="LastName"  id="my-inputs"><br>
+    comment: <input type="text" name="LastName" id="my-inpu"><br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+
+      </div>
+    </section>
+    <!-- contact -->
+    <section id="contact" class="section">
+      <div class="title">
+        <h2>Contact <span>me</span></h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="section">
+      <p>
+        copyright &copy; backroads travel contact company
+        <span id="date"></span>. all rights reserved
+      </p>
+    </footer>
+    <a class="scroll-link top-link" href="#home">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- javascript -->
+    <script src="app.js"></script>
+    <!-- jquery -->
+    <script>
+        $("#click-me").click(function(event){
+            event.preventDefault();
+            $("#title").html("hello")
+        });
+        $("#my-form").submit(function(event){
+            event.preventDefault();
+            var textInput = $("#my-input").val();
+              var textInputs = $("#my-inputs").val();
+                var textInpu = $("#my-inpu").val();
+                 $("#comments").html(textInpu)
+            $("#title").html(textInput + " "+ textInputs )
+        })
+
+        // $(function(){
+        //     $("p").on("click", function(){
+        //         $(this).hide();
+        //     })
+        // })
+    </script>
+  </body>
+</html>
