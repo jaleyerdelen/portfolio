@@ -124,7 +124,7 @@
             <h2>Comment <span>me</span></h2>
             <form action="" id="my-form">
                 Name: <input type="text" name="FirstName" id="my-input"><br>
-                Comment: <input type="text" name="LastName" id="my-inpu"><br>
+                Comment: <input type="text" name="LastName" id="my-comments"><br>
                 <button type="button" class="button">SEND</button>
             </form>
             <div class="comment-box">
@@ -170,7 +170,7 @@
             $(".button").click(function () {
                 var task = $("<div class='task'></div>")
                 var firstName = $("<div class='fname'></div>").text($("#my-input").val());
-                var comment = $("<div class='comment-value'></div>").text($("#my-inpu").val());
+                var comment = $("<div class='comment-value'></div>").text($("#my-comments").val());
                 var task_box = $("<div class='tasks'></div>")
                 $(task).append(firstName)
                 $(task).append(comment)
