@@ -67,3 +67,5 @@ scrollLinks.forEach(function (link) {
     linksContainer.style.height = 0;
   });
 });
+var a = [];
+a.push(txt);

@@ -1,160 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <!-- jquery -->
     <script src="jquery-3.6.0.min.js"></script>
     <!-- styles -->
     <link rel="stylesheet" href="styles.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <header id="home">
-      <!-- navbar -->
-      <nav id="nav">
-        <div class="nav-center">
-          <!-- nav header -->
-          <div class="nav-header">
-            <button class="nav-toggle">
-              <i class="fas fa-bars"></i>
-            </button>
-          </div>
-          <!-- links -->
-          <div class="links-container">
-            <ul class="links">
-              <li>
-                <a href="#home" class="scroll-link">home</a>
-              </li>
-              <li>
-                <a href="#about" class="scroll-link">about</a>
-              </li>
-              <li>
-                <a href="#projects" class="scroll-link">projects</a>
-              </li>
-              <li>
-                <a href="#comment" class="scroll-link">comment</a>
-              </li>
-              <li>
-                <a href="#contact" class="scroll-link">contact</a>
-              </li>
-            </ul>
-          </div>
+        <!-- navbar -->
+        <nav id="nav">
+            <div class="nav-center">
+                <!-- nav header -->
+                <div class="nav-header">
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <!-- links -->
+                <div class="links-container">
+                    <ul class="links">
+                        <li>
+                            <a href="#home" class="scroll-link">home</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="scroll-link">about</a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="scroll-link">projects</a>
+                        </li>
+                        <li>
+                            <a href="#comment" class="scroll-link">comment</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="scroll-link">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- banner -->
+        <div class="banner">
+            <div class="container">
+                <h1>My Portfolio</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eos
+                    neque sunt in? Id, necessitatibus quos quisquam distinctio
+                    laudantium fugiat?
+                </p>
+                <a href="#contact" class="scroll-link btn btn-white">explore contact</a>
+            </div>
         </div>
-      </nav>
-      <!-- banner -->
-      <div class="banner">
-        <div class="container">
-          <h1>My Portfolio</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eos
-            neque sunt in? Id, necessitatibus quos quisquam distinctio
-            laudantium fugiat?
-          </p>
-          <a href="#contact" class="scroll-link btn btn-white"
-            >explore contact</a
-          >
-        </div>
-      </div>
     </header>
     <!-- about -->
     <section id="about" class="section">
-      <div class="title">
-        <h2>about <span>me</span></h2>
-      </div>  
-<div class="img-container">
-      <div class="img-box">
-            <img src="./images/photo.jfif" width="300px" class="photo" alt="photo" />  
+        <div class="title">
+            <h2>about <span>me</span></h2>
         </div>
-    <div class="img-text">
-        <p class="text-about">Hello I'm Jale. I'm Jr. Front-end Developer. This is my portfolio website. I
-            am self-taught and hardworking. I like writing in Medium and sharing what I've learned. Writing code is it is my
-            passion.
-        </p>
-    </div>
-</div>  
-    
+        <div class="img-container">
+            <div class="img-box">
+                <img src="./images/photo.jfif" width="300px" class="photo" alt="photo" />
+            </div>
+            <div class="img-text">
+                <p class="text-about">Hello I'm Jale. I'm Jr. Front-end Developer. This is my portfolio website. I
+                    am self-taught and hardworking. I like writing in Medium and sharing what I've learned. Writing code
+                    is it is my
+                    passion.
+                </p>
+            </div>
+        </div>
+
     </section>
     <!-- projects -->
     <section id="projects" class="section">
-      <div class="title">
-        <h2>my <span>projects</span></h2>
-      </div>
-    <div class="card">
-        <img src="" alt="Avatar" style="width:100%">
-        <div class="container">
-            <h4><b>Jane Doe</b></h4>
-            <p>Interior Designer</p>
+        <div class="title">
+            <h2>my <span>projects</span></h2>
         </div>
-    </div>
+        <div class="cards-section">
+            <div class="card">
+                <img src="./images/menu.png" alt="image" style="width:100%">
+                <div class="container">
+                    <h4><b></b></h4>
+                    <p><a href="https://github.com/jaleyerdelen/JavaScript-15Projects/tree/main/8-Menu"
+                            target="_blank">Menu Project</a></p>
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="./images/movie-ss.png" alt="image" style="width:100%">
+                <div class="container">
+                    <h4><b></b></h4>
+                    <p><a href="https://github.com/jaleyerdelen/Movie-Project" target="_blank">Movie Project</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/south-park.png" alt="images" style="width:100%">
+                <div class="container">
+                    <h4><b></b></h4>
+                    <p><a href="https://github.com/jaleyerdelen/react-SP-Project" target="_blank">South Park Project</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/book-ss.png" alt="images" style="width:100%">
+                <div class="container">
+                    <h4><b></b></h4>
+                    <p><a href="https://github.com/jaleyerdelen/BookFolio" target="_blank">Book Project</a>
+                    </p>
+                </div>
+            </div>
     </section>
 
-    <h1 id="title">??</h1>
-    <div id="comments"></div>
-    <a id="click-me">click</a>
-   
     <!-- comments -->
     <section id="comment" class="section">
-      <div class="title">
-        <h2>Comment <span>me</span></h2>
-
-  
-<form action="" id="my-form">
-    First name: <input type="text" name="FirstName" id="my-input"><br>
-    Last name: <input type="text" name="LastName"  id="my-inputs"><br>
-    comment: <input type="text" name="LastName" id="my-inpu"><br>
-    <input type="submit" value="Submit">
-</form>
-
-</body>
-
-      </div>
+        <div class="title">
+            <h2>Comment <span>me</span></h2>
+            <form action="" id="my-form">
+                Name: <input type="text" name="FirstName" id="my-input"><br>
+                Comment: <input type="text" name="LastName" id="my-inpu"><br>
+                <button type="button" class="button">SEND</button>
+            </form>
+            <div class="comment-box">
+                <div id="comments"></div>
+            </div>
+        </div>
+        </div>
     </section>
     <!-- contact -->
     <section id="contact" class="section">
-      <div class="title">
-        <h2>Contact <span>me</span></h2>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
+        <div class="title">
+            <h2>Contact <span>me</span></h2>
+            <div class="info">
+                <h4 class="my-name">Jale Yerdelen
+                    <h4 />
+                    <p>Front-end Developer</p>
+
+                    <a href="https://www.linkedin.com/in/jale-yerdelen/" target="_blank" class="contact"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/jale-yerdelen/" target="_blank" class="contact"><i
+                            class="fab fa-github"></i></a>
+                    <a href="mailto:jaleyerdelen@gmail.com" target="_blank" class="contact"><i
+                            class="far fa-envelope"></i></a>
+            </div>
+        </div>
     </section>
     <!-- footer -->
     <footer class="section">
-      <p>
-        copyright &copy; backroads travel contact company
-        <span id="date"></span>. all rights reserved
-      </p>
+        <p>
+            Coded by Jale Yerdelen
+            <span id="date"></span>
+        </p>
     </footer>
     <a class="scroll-link top-link" href="#home">
-      <i class="fas fa-arrow-up"></i>
+        <i class="fas fa-arrow-up"></i>
     </a>
     <!-- javascript -->
     <script src="app.js"></script>
     <!-- jquery -->
     <script>
-        $("#click-me").click(function(event){
-            event.preventDefault();
-            $("#title").html("hello")
-        });
-        $("#my-form").submit(function(event){
-            event.preventDefault();
-            var textInput = $("#my-input").val();
-              var textInputs = $("#my-inputs").val();
-                var textInpu = $("#my-inpu").val();
-                 $("#comments").html(textInpu)
-            $("#title").html(textInput + " "+ textInputs )
-        })
 
-        // $(function(){
-        //     $("p").on("click", function(){
-        //         $(this).hide();
-        //     })
-        // })
+        $(document).ready(function () {
+            $(".button").click(function () {
+                var task = $("<div class='task'></div>")
+                var firstName = $("<div class='fname'></div>").text($("#my-input").val());
+                var comment = $("<div class='comment-value'></div>").text($("#my-inpu").val());
+                var task_box = $("<div class='tasks'></div>")
+                $(task).append(firstName)
+                $(task).append(comment)
+                $(".comment-box").append(task_box)
+                $(task_box).append(task)
+                var del = $("<button class='trash'><i class='fas fa-trash'></i></button>").click(function () {
+                    $(task_box).remove()
+                })
+                $(task_box).append(del)
+            });
+        });
+
     </script>
-  </body>
+</body>
+
 </html>
